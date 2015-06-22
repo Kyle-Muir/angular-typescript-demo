@@ -1,0 +1,3 @@
+#ignore .js\.js.map files from the project
+*.js
+*.js.map
