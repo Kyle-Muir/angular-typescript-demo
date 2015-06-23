@@ -24,7 +24,11 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\app.ts" />
+    <TypeScriptCompile Include="Scripts\domain\topic.ts" />
     <TypeScriptCompile Include="Scripts\homePageController.ts" />
+    <TypeScriptCompile Include="Scripts\integration\IGenericHttpResponse.ts" />
+    <TypeScriptCompile Include="Scripts\integration\IRedditSubmitter.ts" />
+    <TypeScriptCompile Include="Scripts\integration\IRedditTopic.ts" />
     <TypeScriptCompile Include="Scripts\topicRepository.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -34,6 +38,8 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\lodash\lodash.d.ts" />
+    <TypeScriptCompile Include="_references.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -44,10 +50,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scripts\domain\" />
-    <Folder Include="Scripts\integration\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>

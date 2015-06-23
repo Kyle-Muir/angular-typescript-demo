@@ -2,14 +2,14 @@
 
 module Controller {
     export class HomePageController {
-        public topicList: Array<any>;
+        public topicList: Array<Model.Topic>;
 
          constructor(private topicRepository: Services.ITopicRepository) {
              this.loadAllTopics();
          }
 
-         public loadAllTopics = () => {
-             this.topicRepository.loadTopics().then((resp) => {
+         public loadAllTopics = (): void => {
+             this.topicRepository.loadTopics().then((resp: Array<Model.Topic>) => {
                  this.topicList = resp;
              });
          }

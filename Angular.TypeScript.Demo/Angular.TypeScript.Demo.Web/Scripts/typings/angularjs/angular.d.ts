@@ -6,7 +6,7 @@
 
 /// <reference path="../jquery/jquery.d.ts" />
 
-//declare var angular: angular.IAngularStatic;
+declare var angular: angular.IAngularStatic;
 
 // Support for painless dependency injection
 interface Function {
