@@ -4,6 +4,7 @@ namespace Angular.TypeScript.Demo.WebAPI.Models
 {
     public class RedditTopicDto
     {
+        public int Id { get; set; }
         public string Title { get; set; }
         public Uri TopicUrl { get; set; }
         public Uri HostUrl { get; set; }
