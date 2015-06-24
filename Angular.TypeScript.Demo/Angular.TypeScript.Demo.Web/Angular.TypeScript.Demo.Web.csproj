@@ -24,6 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\app.ts" />
+    <TypeScriptCompile Include="Scripts\domain\submitter.ts" />
     <TypeScriptCompile Include="Scripts\domain\topic.ts" />
     <TypeScriptCompile Include="Scripts\homePageController.ts" />
     <TypeScriptCompile Include="Scripts\integration\IGenericHttpResponse.ts" />
