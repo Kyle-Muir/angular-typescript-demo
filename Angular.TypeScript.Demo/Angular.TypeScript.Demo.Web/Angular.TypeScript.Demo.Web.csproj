@@ -10,7 +10,6 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
     <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -18,33 +17,53 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="css\app.css" />
-    <Content Include="index.html" />
+    <Content Include=".gitignore" />
+    <Content Include="e2e\main.po.js" />
+    <Content Include="e2e\main.spec.js" />
+    <Content Include="gulpfile.js" />
+    <Content Include="gulp\build.js" />
+    <Content Include="gulp\conf.js" />
+    <Content Include="gulp\e2e-tests.js" />
+    <Content Include="gulp\inject.js" />
+    <Content Include="gulp\scripts.js" />
+    <Content Include="gulp\server.js" />
+    <Content Include="gulp\styles.js" />
+    <Content Include="gulp\tsd.js" />
+    <Content Include="gulp\unit-tests.js" />
+    <Content Include="gulp\watch.js" />
+    <Content Include="karma.conf.js" />
+    <Content Include="protractor.conf.js" />
+    <Content Include="src\app\components\navbar\navbar.html" />
+    <Content Include="src\app\main\main.controller.spec.js" />
+    <Content Include="src\app\main\main.html" />
+    <Content Include="src\assets\images\angular.png" />
+    <Content Include="src\assets\images\bootstrap.png" />
+    <Content Include="src\assets\images\browsersync.png" />
+    <Content Include="src\assets\images\gulp.png" />
+    <Content Include="src\assets\images\jasmine.png" />
+    <Content Include="src\assets\images\karma.png" />
+    <Content Include="src\assets\images\less.png" />
+    <Content Include="src\assets\images\protractor.png" />
+    <Content Include="src\assets\images\typescript.png" />
+    <Content Include="src\assets\images\ui-bootstrap.png" />
+    <Content Include="src\assets\images\yeoman.png" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\index.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\app.ts" />
-    <TypeScriptCompile Include="Scripts\builder\topicBuilder.ts" />
-    <TypeScriptCompile Include="Scripts\domain\submitter.ts" />
-    <TypeScriptCompile Include="Scripts\domain\topic.ts" />
-    <TypeScriptCompile Include="Scripts\homePageController.ts" />
-    <TypeScriptCompile Include="Scripts\integration\IGenericHttpResponse.ts" />
-    <TypeScriptCompile Include="Scripts\integration\IRedditSubmitter.ts" />
-    <TypeScriptCompile Include="Scripts\integration\IRedditTopic.ts" />
-    <TypeScriptCompile Include="Scripts\topicRepository.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\lodash\lodash.d.ts" />
-    <TypeScriptCompile Include="_references.ts" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="e2e\.jshintrc" />
+    <Content Include="gulp\.jshintrc" />
+    <Content Include="src\app\components\navbar\navbar.less" />
+    <Content Include="src\app\index.less" />
+    <Content Include=".bowerrc" />
+    <Content Include=".editorconfig" />
+    <Content Include=".jshintrc" />
+    <Content Include=".yo-rc.json" />
+    <Content Include="bower.json" />
+    <Content Include="package.json" />
+    <Content Include="tsd.json" />
+    <Content Include="tslint.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -52,7 +71,34 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <TypeScriptCompile Include=".tmp\typings\angular-ui-router\angular-ui-router.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\bootstrap\bootstrap.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\lodash\lodash.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\moment\moment-node.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\moment\moment.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\toastr\toastr.d.ts" />
+    <TypeScriptCompile Include=".tmp\typings\tsd.d.ts" />
+    <TypeScriptCompile Include="src\app\builder\topic.builder.ts" />
+    <TypeScriptCompile Include="src\app\components\navbar\navbar.directive.ts" />
+    <TypeScriptCompile Include="src\app\domain\submitter.ts" />
+    <TypeScriptCompile Include="src\app\domain\topic.ts" />
+    <TypeScriptCompile Include="src\app\index.config.ts" />
+    <TypeScriptCompile Include="src\app\index.module.ts" />
+    <TypeScriptCompile Include="src\app\index.route.ts" />
+    <TypeScriptCompile Include="src\app\index.run.ts" />
+    <TypeScriptCompile Include="src\app\integration\dto\IGenericHttpResponse.ts" />
+    <TypeScriptCompile Include="src\app\integration\dto\IRedditSubmitter.ts" />
+    <TypeScriptCompile Include="src\app\integration\dto\IRedditTopic.ts" />
+    <TypeScriptCompile Include="src\app\integration\topic.service.ts" />
+    <TypeScriptCompile Include="src\app\main\main.controller.ts" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>

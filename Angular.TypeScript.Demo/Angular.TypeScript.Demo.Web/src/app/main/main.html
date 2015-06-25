@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div>
+    <navbar creationDate="main.creationDate" />
+  </div>
+
+    <div id="content" class="app-wrapper">
+        <ul class="card-stack">
+            <li class="card" ng-repeat="item in main.topicList | orderBy:'-upvotes'">
+                <div class="image-holder">
+                    <img ng-src="{{item.hostUrl}}" alt="{{item.title}}">
+                </div>
+
+                <div class="card-content">
+
+                    <div class="post-data">
+                        <a href="#" ng-bind="item.subreddit"></a>
+                        <time>{{item.submissionTime | date: 'dd MMM'}}</time>
+                    </div>
+
+                    <div class="post-content">
+                        <h2>
+                            <a ng-href="{{item.hostUrl}}" ng-bind="item.title"></a>
+                        </h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptas tempore...</p>
+                    </div>
+
+                    <div class="post-author">
+                        <img ng-src="http://placehold.it/45/55C1E7/fff?text={{item.submitter.initial}}" alt="author">
+                        <a href="#" ng-bind="item.submitter.name"></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
