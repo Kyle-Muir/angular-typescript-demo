@@ -1,18 +1,21 @@
-# angular-typescript-demo
-AngularJS with TypeScript demo for FHF
+#AngularJS with TypeScript demo for FHF
 
-To run the web project:
+##To run the web project:
 
-install nodejs
+* install nodejs
 
-npm install gulp -gulp
+* npm install gulp -gulp
 
-npm install bower -g
+* npm install bower -g
 
-npm install tsd -g
+* npm install tsd -g
 
-npm install
+##Inside the Angular.TypeScript.Demo\Angular.TypeScript.Demo.Web directory:
 
-bower install
+* npm install
 
-gulp serve
+* bower install
+
+* gulp serve
+
+gulp serve will run your website using node express with livereload on changes.
