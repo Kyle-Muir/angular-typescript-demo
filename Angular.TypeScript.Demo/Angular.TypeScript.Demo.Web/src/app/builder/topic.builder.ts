@@ -1,4 +1,5 @@
 ﻿module Builder {
+    'use strict';
     export class TopicBuilder {
         public static buildTopic(topic: Integration.IRedditTopic): Model.Topic {
             var submitter = new Model.Submitter(topic.Submitter.Id, topic.Submitter.Name);

@@ -1,5 +1,5 @@
-var Services;
-(function (Services) {
+var app;
+(function (app) {
     'use strict';
     var TopicService = (function () {
         function TopicService($http) {
@@ -22,7 +22,6 @@ var Services;
         }
         return TopicService;
     })();
-    Services.TopicService = TopicService;
-    angular.module('app').service('TopicService', Services.TopicService);
-})(Services || (Services = {}));
+    app.TopicService = TopicService;
+})(app || (app = {}));
 //# sourceMappingURL=topic.service.js.map

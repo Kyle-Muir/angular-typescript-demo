@@ -1,5 +1,6 @@
 var Model;
 (function (Model) {
+    'use strict';
     var Topic = (function () {
         function Topic(id, title, hostUrl, submissionTime, subreddit, submitter, upvotes) {
             if (!_.isNumber(id)) {

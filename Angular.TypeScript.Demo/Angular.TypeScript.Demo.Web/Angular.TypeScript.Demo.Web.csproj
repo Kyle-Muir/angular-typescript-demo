@@ -47,7 +47,6 @@
     <Content Include="src\assets\images\typescript.png" />
     <Content Include="src\assets\images\ui-bootstrap.png" />
     <Content Include="src\assets\images\yeoman.png" />
-    <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
     <Content Include="web.config" />
   </ItemGroup>

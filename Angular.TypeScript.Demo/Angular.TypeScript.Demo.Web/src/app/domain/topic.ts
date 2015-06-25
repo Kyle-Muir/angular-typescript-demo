@@ -1,6 +1,7 @@
 ﻿module Model {
+    'use strict';
     export class Topic {
-        private upvotes: number;
+        public upvotes: number;
         public hostUrl: string;
         public title: string;
         public id: number;

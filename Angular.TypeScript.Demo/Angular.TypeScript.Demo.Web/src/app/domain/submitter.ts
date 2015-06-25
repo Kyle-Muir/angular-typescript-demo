@@ -1,4 +1,5 @@
 ﻿module Model {
+    'use strict';
     export class Submitter {
         public id: string;
         public name: string;

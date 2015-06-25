@@ -1,4 +1,5 @@
-﻿ module Integration {
+﻿module Integration {
+    'use strict';
      export interface IRedditTopic {
          HostUrl: string;
          Id: number;
