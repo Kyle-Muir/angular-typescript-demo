@@ -6,5 +6,11 @@ bower_components/
 dist/
 
 typings/
-.js
-.js.map
+src/*.js
+src/*.js.map
+src/*/*.js
+src/*/*.js.map
+src/*/*/*.js
+src/*/*/*.js.map
+*.js
+*.js.map
